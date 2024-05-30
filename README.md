@@ -4,7 +4,7 @@ A clean architecture template for Solid Start with useful packages and strict Ty
 
 ## Made with ❤️ by
 
-![Alt text](src/core/assets/brandwhite.png?raw=true 'Title')
+![Alt text](public/brandwhite.png?raw=true 'Title')
 
 ## Extra Packages
 
