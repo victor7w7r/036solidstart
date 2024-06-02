@@ -7,8 +7,8 @@ export default createHandler(() => (
       <html lang='en'>
         <head>
           <meta charset='utf-8' />
-          <meta name='viewport' content='width=device-width, initial-scale=1' />
-          <link rel='icon' href='/favicon.svg' />
+          <meta content='width=device-width, initial-scale=1' name='viewport' />
+          <link href='/favicon.svg' rel='icon' />
           {assets}
         </head>
         <body>

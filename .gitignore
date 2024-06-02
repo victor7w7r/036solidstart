@@ -4,6 +4,7 @@ dist
 .vercel
 .netlify
 .vinxi
+coverage
 .env
 .env*.local
 /node_modules
