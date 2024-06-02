@@ -3,13 +3,13 @@ import '~/core/styles/global.css'
 
 import { MetaProvider, Title } from '@solidjs/meta'
 import { Router } from '@solidjs/router'
-import { QueryClient, QueryClientProvider } from '@tanstack/solid-query'
 import { FileRoutes } from '@solidjs/start/router'
+import { QueryClient, QueryClientProvider } from '@tanstack/solid-query'
 import { Suspense } from 'solid-js'
 
+import { Header } from '~/features/common/ui/components'
 import DataProvider from '~/features/common/ui/context/data-context'
 import ThemeProvider from '~/features/common/ui/context/theme-context'
-import { Header } from '~/features/common/ui/components'
 
 const queryClient = new QueryClient()
 

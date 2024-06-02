@@ -19,7 +19,7 @@ module.exports = {
     'plugin:promise/recommended',
     'plugin:security/recommended-legacy',
     'plugin:solid/typescript',
-    'plugin:sonarjs/recommended',
+    'plugin:sonarjs/recommended-legacy',
     'plugin:tailwindcss/recommended',
     'plugin:unicorn/recommended',
     'plugin:vitest/legacy-recommended'
@@ -56,7 +56,6 @@ module.exports = {
         'vitest/no-focused-tests': 'warn',
         'vitest/no-standalone-expect': 'warn',
         'vitest/no-test-return-statement': 'warn',
-        'vitest/prefer-called-with': 'warn',
         'vitest/prefer-comparison-matcher': 'warn',
         'vitest/prefer-each': 'warn',
         'vitest/prefer-equality-matcher': 'warn',
@@ -158,6 +157,7 @@ module.exports = {
     'functional/no-throw-statements': 'error',
     'functional/no-try-statements': 'error',
     'functional/prefer-immutable-types': 'off',
+    'functional/prefer-tacit': 'off',
     'import/exports-last': 'error',
     'import/no-absolute-path': 'error',
     'import/no-amd': 'error',
@@ -206,18 +206,19 @@ module.exports = {
     'promise/always-return': 'off',
     'simple-import-sort/exports': 'warn',
     'simple-import-sort/imports': 'warn',
+    'solid/jsx-no-undef': 'off',
     'solid/prefer-show': 'warn',
     'solid/reactivity': 'off',
     'toplevel/no-toplevel-let': 'warn',
     'toplevel/no-toplevel-side-effect': 'warn',
     'toplevel/no-toplevel-var': 'error',
     'unicorn/consistent-destructuring': 'error',
+    'unicorn/no-anonymous-default-export': 'off',
     'unicorn/no-await-expression-member': 'off',
     'unicorn/no-keyword-prefix': 'error',
     'unicorn/no-unused-properties': 'warn',
     'unicorn/numeric-separators-style': 'off',
-    'unicorn/prevent-abbreviations': 'off',
-    'yoda': ['error', 'never', { 'exceptRange': false }]
+    'unicorn/prevent-abbreviations': 'off'
   },
   'settings': {
     'import/resolver': {

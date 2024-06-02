@@ -1,6 +1,7 @@
 import '~/features/home/ui/styles/home.css'
 
 import { useNavigate } from '@solidjs/router'
+
 import { State } from '~/features/common/ui/components'
 import { useTheme } from '~/features/common/ui/hooks'
 import { Call } from '~/features/home/ui/components'
@@ -32,12 +33,12 @@ export default function Home() {
           <h3 class='adaptable-center-text-base mb-4 font-semibold'>
             Happy Hacking! with Typescript?
           </h3>
-          <p class='adaptable-center-text-base font-roboto mb-8'>
+          <p class='adaptable-center-text-base mb-8 font-roboto'>
             Roboto Font works with
           </p>
           <img
             alt=''
-            class='tall:scale-75 scale-50 lg:scale-75'
+            class='scale-50 lg:scale-75 tall:scale-75'
             height={200}
             src={`/${isDark() ? 'tailwindwhite' : 'tailwind'}.png`}
             width={400}

@@ -1,7 +1,7 @@
 import { useContext } from 'solid-js'
 
-import { ThemeContext } from '~/features/common/ui/context'
 import { darkTheme, whiteTheme } from '~/core/theme/app-theme'
+import { ThemeContext } from '~/features/common/ui/context'
 
 export const useTheme = () => {
   const { setTheme, theme } = useContext(ThemeContext)

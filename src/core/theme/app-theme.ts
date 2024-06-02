@@ -4,16 +4,17 @@ type CommonElements = {
   white: string
 }
 
-const stdElements: CommonElements = {
+export const stdElements: CommonElements = {
   control: 'bg-slate-700/30',
   dark: 'dark:bg-zinc-900',
   white: 'bg-white'
 }
 
-export type AppTheme = CommonElements & {
+// eslint-disable-next-line @typescript-eslint/sort-type-constituents
+export type AppTheme = {
   isDark: boolean
   togglePeer: string
-}
+} & CommonElements
 
 export const whiteTheme: AppTheme = {
   ...stdElements,

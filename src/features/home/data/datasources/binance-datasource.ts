@@ -1,7 +1,7 @@
 import type { AxiosResponse } from 'axios'
 
-import type { Binance } from '~/features/home/business/models'
 import { type AxiosModule, timeout } from '~/core/modules'
+import type { Binance } from '~/features/home/business/models'
 
 export type BinanceDataSource = Readonly<{
   getBitcoin: () => Promise<AxiosResponse<Binance[]>>

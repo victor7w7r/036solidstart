@@ -1,8 +1,8 @@
 import { createQuery } from '@tanstack/solid-query'
 import { Match, Switch } from 'solid-js'
 
+import { inject } from '~/core/di'
 import { Spinner } from '~/features/home/ui/components'
-import { inject } from '~/core/config'
 
 export const Call = () => {
   const getBitcoinUseCase = inject.resolve('getBitcoinUseCase')
