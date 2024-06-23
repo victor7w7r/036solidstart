@@ -5,20 +5,20 @@ import DataProvider, {
   DataContext
 } from '~/features/common/ui/context/data-context'
 
-const TestComponent = () => {
-  const { data, setData } = useContext(DataContext)
-
-  return (
-    <div>
-      <p data-testid='data'>{data()}</p>
-      <button data-testid='set-data' onClick={() => setData('new data')}>
-        Set Data
-      </button>
-    </div>
-  )
-}
-
 describe('dataProvider', () => {
+  const TestComponent = () => {
+    const { data, setData } = useContext(DataContext)
+
+    return (
+      <div>
+        <p data-testid='data'>{data()}</p>
+        <button data-testid='set-data' onClick={() => setData('new data')}>
+          Set Data
+        </button>
+      </div>
+    )
+  }
+
   it('provides the initial context values', () => {
     expect.assertions(1)
 

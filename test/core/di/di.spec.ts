@@ -5,6 +5,7 @@ describe('inject', () => {
     expect.assertions(1)
 
     const instance = inject.resolve('axiosModule')
+
     expect(instance).toBeDefined()
   })
 
@@ -12,6 +13,7 @@ describe('inject', () => {
     expect.assertions(1)
 
     const instance = inject.resolve('binanceDataSource')
+
     expect(instance).toBeDefined()
   })
 
@@ -19,6 +21,7 @@ describe('inject', () => {
     expect.assertions(1)
 
     const instance = inject.resolve('binanceRepository')
+
     expect(instance).toBeDefined()
   })
 
@@ -26,6 +29,7 @@ describe('inject', () => {
     expect.assertions(1)
 
     const instance = inject.resolve('getBitcoinUseCase')
+
     expect(instance).toBeDefined()
   })
 })

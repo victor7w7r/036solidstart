@@ -2,21 +2,21 @@ import { fireEvent, render, screen } from '@solidjs/testing-library'
 
 import { Toggler } from '~/features/common/ui/components/toggler/toggler'
 
-const mocks = vi.hoisted(() => ({
-  mockIsDark: vi.fn().mockReturnValue(false),
-  mockToggle: vi.fn(),
-  mockTogglePeer: vi.fn().mockReturnValue('light-mode')
-}))
-
-vi.mock('~/features/common/ui/hooks', () => ({
-  useTheme: () => ({
-    isDark: mocks.mockIsDark,
-    toggle: mocks.mockToggle,
-    togglePeer: mocks.mockTogglePeer
-  })
-}))
-
 describe('toggler', () => {
+  const mocks = vi.hoisted(() => ({
+    mockIsDark: vi.fn().mockReturnValue(false),
+    mockToggle: vi.fn(),
+    mockTogglePeer: vi.fn().mockReturnValue('light-mode')
+  }))
+
+  vi.mock('~/features/common/ui/hooks', () => ({
+    useTheme: () => ({
+      isDark: mocks.mockIsDark,
+      toggle: mocks.mockToggle,
+      togglePeer: mocks.mockTogglePeer
+    })
+  }))
+
   it('renders the component with initial light mode', () => {
     expect.assertions(2)
 
